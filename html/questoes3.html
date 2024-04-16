@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="frame.js"></script>
+    <title>Questões de Desenvolvimento Web - Múltipla Escolha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .correct-answer {
+            display: none;
+            color: green;
+        }
+        #check-answers-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Questões de Desenvolvimento Web - Múltipla Escolha</h1>
+
+    <div class="question">
+        <h2>1. O que significa HTML?</h2>
+        <ul class="options">
+            <li><input type="radio" name="q1" value="a"> a) Hyper Text Markup Language</li>
+            <li><input type="radio" name="q1" value="b"> b) High Tech Machine Learning</li>
+            <li><input type="radio" name="q1" value="c"> c) Home Tool Management Language</li>
+            <li><input type="radio" name="q1" value="d"> d) Hyperlink and Text Management Language</li>
+        </ul>
+        <p class="correct-answer">Resposta Correta: a) Hyper Text Markup Language</p>
+    </div>
+
+    <div class="question">
+        <h2>2. O que é CSS?</h2>
+        <ul class="options">
+            <li><input type="radio" name="q2" value="a"> a) Computer Style Sheets</li>
+            <li><input type="radio" name="q2" value="b"> b) Creative Style Selector</li>
+            <li><input type="radio" name="q2" value="c"> c) Cascading Style Sheets</li>
+            <li><input type="radio" name="q2" value="d"> d) Colorful Style Sheets</li>
+        </ul>
+        <p class="correct-answer">Resposta Correta: c) Cascading Style Sheets</p>
+    </div>
+
+    <div class="question">
+        <h2>3. O que é JavaScript?</h2>
+        <ul class="options">
+            <li><input type="radio" name="q3" value="a"> a) Uma linguagem de programação de servidor</li>
+            <li><input type="radio" name="q3" value="b"> b) Uma linguagem de programação de banco de dados</li>
+            <li><input type="radio" name="q3" value="c"> c) Uma linguagem de programação de front-end</li>
+            <li><input type="radio" name="q3" value="d"> d) Uma linguagem de programação de estilos</li>
+        </ul>
+        <p class="correct-answer">Resposta Correta: c) Uma linguagem de programação de front-end</p>
+    </div>
+
+    <button id="check-answers-btn">Verificar Respostas</button><br><br>
+
+    <li><a href="questoes1">POO</a></li><br>
+        <li><a href="questoes2">BANCO DE DADOS</a></li><br>
+        <li><a href="quizPrincipal">QUIZ PRINCIPAL</a></li>
+
+    <script>
+        document.getElementById('check-answers-btn').addEventListener('click', function() {
+            var correctAnswers = document.querySelectorAll('.correct-answer');
+            correctAnswers.forEach(function(answer) {
+                answer.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

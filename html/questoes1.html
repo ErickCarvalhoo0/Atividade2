@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="frame.js"></script>
+    <title>Questões de POO - Múltipla Escolha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .correct-answer {
+            display: none;
+            color: green;
+        }
+        #check-answers-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Questões de Programação Orientada a Objetos (POO) - Múltipla Escolha</h1>
+
+    <div class="question">
+        <h2>1. O que é Programação Orientada a Objetos?</h2>
+        <ul class="options">
+            <li><input type="radio" name="q1" value="a"> a) Um paradigma de programação baseado em objetos</li>
+            <li><input type="radio" name="q1" value="b"> b) Um método de programação baseado em funções</li>
+            <li><input type="radio" name="q1" value="c"> c) Um sistema de codificação orientado a objetos</li>
+            <li><input type="radio" name="q1" value="d"> d) Um sistema de codificação baseado em procedimentos</li>
+        </ul>
+        <p class="correct-answer">Resposta Correta: a) Um paradigma de programação baseado em objetos</p>
+    </div>
+
+    <div class="question">
+        <h2>2. Quais são os principais conceitos da POO?</h2>
+        <ul class="options">
+            <li><input type="radio" name="q2" value="a"> a) Encapsulamento, Herança e Polimorfismo</li>
+            <li><input type="radio" name="q2" value="b"> b) Iteração, Condicionamento e Abstração</li>
+            <li><input type="radio" name="q2" value="c"> c) Modularidade, Abstração e Encapsulamento</li>
+            <li><input type="radio" name="q2" value="d"> d) Modularidade, Herança e Polimorfismo</li>
+        </ul>
+        <p class="correct-answer">Resposta Correta: a) Encapsulamento, Herança e Polimorfismo</p>
+    </div>
+
+    <div class="question">
+        <h2>3. Qual é a diferença entre uma classe e um objeto?</h2>
+        <ul class="options">
+            <li><input type="radio" name="q3" value="a"> a) Uma classe é uma instância de um objeto</li>
+            <li><input type="radio" name="q3" value="b"> b) Uma classe é um modelo para criar objetos</li>
+            <li><input type="radio" name="q3" value="c"> c) Um objeto é um modelo para criar classes</li>
+            <li><input type="radio" name="q3" value="d"> d) Um objeto é um método dentro de uma classe</li>
+        </ul>
+        <p class="correct-answer">Resposta Correta: b) Uma classe é um modelo para criar objetos</p>
+    </div>
+
+    <button id="check-answers-btn">Verificar Respostas</button><br><br>
+
+    <li><a href="questoes2">BANCO DE DADOS</a></li><br>
+        <li><a href="questoes3">HTML, CSS E JAVASCRIPT</a></li><br>
+        <li><a href="quizPrincipal">QUIZ PRINCIPAL</a></li>
+
+    <script>
+        document.getElementById('check-answers-btn').addEventListener('click', function() {
+            var correctAnswers = document.querySelectorAll('.correct-answer');
+            correctAnswers.forEach(function(answer) {
+                answer.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
